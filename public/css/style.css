@@ -24,6 +24,7 @@
 ------------ */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -71,7 +72,6 @@ body {
   margin: 0;
   padding-left: 18rem;
   display: flex;
-  /* font-family: "Kingthings", "Segoe UI", sans-serif; */
   font-family: "system-ui", "Segoe UI", sans-serif;
 }
 section {
