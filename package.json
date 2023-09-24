@@ -4,7 +4,7 @@
   "homepage": "http://safwat-fathi.me/",
   "private": true,
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^6.0.0"
   },
   "dependencies": {},
   "scripts": {
