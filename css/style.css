@@ -224,6 +224,17 @@ section.about .about_social a i.fab {
   color: white;
 }
 
+.cv_link {
+  margin-block: 1rem;
+}
+.cv_link h2 {
+  text-decoration: underline;
+  width: 13rem;
+}
+.cv_link h2:hover {
+  text-decoration: none;
+}
+
 /* experience styles
 -------------------- */
 section.experience {
@@ -241,6 +252,7 @@ section.experience {
 }
 
 .job_org h4 {
+  max-width: 29rem;
   font-size: 2rem;
 }
 
