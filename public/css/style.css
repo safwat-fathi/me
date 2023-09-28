@@ -105,6 +105,7 @@ nav {
   align-items: center;
   padding: 50px;
   background: var(--prim_color);
+  perspective: 1000px;
 }
 
 .nav_logo {
@@ -148,17 +149,35 @@ ul.menu li:not(:last-child) {
 }
 
 nav ul.menu a {
+  position: relative;
+  background: transparent;
   color: var(--sec_color);
   font-size: 25px;
   font-weight: bold;
   padding: 5px 10px;
-  background: transparent;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+nav ul.menu a::before {
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--sec_color);
+  z-index: -1;
+  transform: translateX(-100%);
 }
 
 nav ul.menu a:hover {
-  background-color: var(--sec_color);
   color: white;
+}
+
+nav ul.menu a:hover::before {
+  transform: translateX(0);
 }
 
 /* main styles
