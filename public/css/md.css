@@ -1,0 +1,27 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+  :root {
+    font-size: 17px;
+  }
+
+  body {
+    padding-left: 0;
+  }
+
+  section {
+    width: 93%;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  section.portfolio .portfolio_gallery {
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: baseline;
+  }
+
+  section.portfolio .portfolio_gallery .project {
+    margin-right: 1rem;
+    width: 20rem;
+  }
+}
