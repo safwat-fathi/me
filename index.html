@@ -7,14 +7,39 @@
     <link rel="icon" href="./img/vector/isolated-layout.svg" />
     <!-- title -->
     <title>Safwat Fathi - Front-End Developer</title>
+    <meta
+      name="description"
+      content="I am an experienced front-end developer with over 5 years of
+            experience building web applications. Specialized in modern
+            JavaScript development using frameworks like React and Vue with
+            strong skills in full-stack development using Node.js."
+    />
     <!-- open graph meta tags -->
+    <meta property="og:locale" content="en" />
     <meta property="og:title" content="Safwat Fathi - Front-End Developer" />
+    <meta
+      property="og:description"
+      content="I am an experienced front-end developer with over 5 years of
+            experience building web applications. Specialized in modern
+            JavaScript development using frameworks like React and Vue with
+            strong skills in full-stack development using Node.js."
+    />
     <meta property="og:type" content="portfolio" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="./img/vector/default.svg" />
+    <meta property="og:url" content="https://safwat-fathi.me/" />
+    <meta property="og:image" content="img/default.png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="safwat-fathi" />
 
     <!-- css styles -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- decomposing css stylesheets to reduce render-blocking time -->
+    <link rel="stylesheet" href="css/xs.css" media="(min-width: 319px)" />
+    <link rel="stylesheet" href="css/sm.css" media="(min-width: 576px)" />
+    <link rel="stylesheet" href="css/md.css" media="(min-width: 767px)" />
+    <link rel="stylesheet" href="css/lg.css" media="(min-width: 992px)" />
   </head>
   <body>
     <nav>
@@ -529,4 +554,17 @@
       </section>
     </main>
   </body>
+
+  <script>
+    (() => {
+      const handleScroll = e => {
+        if (window.scrollY > 100) {
+          console.log("scrolled");
+          console.log("🚀 ~ e.target:", window.scrollY);
+        }
+      };
+
+      document.addEventListener("scroll", handleScroll);
+    })();
+  </script>
 </html>
